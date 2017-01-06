@@ -9,7 +9,7 @@ resolution="1920x1080" #The aviable resolutions are: 1366×768, 1920×1080, 1920
 imageFileName=".wallpaper.jpg"
 downloadDirectory="$HOME"
 
-
+sleep 5 #If you launch the script automatically on startup, it's necessary that the script waits x seconds while the PC ties to establish an internet connection
 
 wget -q --tries=2 --timeout=5 --spider http://google.com
 if [[ $? -eq 0 ]]; then
